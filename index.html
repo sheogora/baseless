@@ -1,0 +1,31 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Base - LESS</title>
+		<base href="/"></base>
+		<link rel="stylesheet" href="styles.css" type="text/css"/>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+		<script src="angular.js"></script>
+		<script src="angular-route.js"></script>
+		<script src="modules.js"></script>
+		<script src="routes.js"></script>
+		<script src="controllers.js"></script>
+		<script src="directives.js"></script>
+	</head>
+
+	<body ng-app="baseLess">
+		<div class="content" ng-controller="NavCtrl">
+			<ul class="nav">
+				<li class="navItem"><a href="/proj1">Project 1</a></li>
+				<li class="navItem"><a href="/proj2">Project 2</a></li>
+				<li class="navItem"><a href="/proj3">Project 3</a></li>
+				<li class="navItem"><a href="/proj4">Project 4</a></li>
+				<li class="navItem"><a href="/proj5">Project 5</a></li>
+				<li class="navItem"><a href="/proj6">Project 6</a></li>
+			</ul>
+			<article>
+				<section ng-view></section>
+			</article>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "baseless",
+  "version": "1.0.0",
+  "description": "practice LESS application",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "angular-route": "^1.6.8",
+    "concurrently": "^3.5.0",
+    "express": "^4.16.2",
+    "less": "^2.7.3",
+    "less-watch-compiler": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "concurrently \"node server.js\" \"npm run build:less\"",
+    "build:less": "less-watch-compiler less css styles.less"
+  }
+}

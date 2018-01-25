@@ -1,0 +1,15 @@
+@scale: .one, .two, .three, .four, .five, .six;
+.scale {
+	.call(@scale; #00ff00; 12px);
+}
+.call (@list, @color, @size) {
+	@newColor: @color;
+   	color: @color;
+   	width: @size;
+   
+   @{list} {
+	  	color: @color;
+	  	width: 30px;
+	  	height: 100px;
+   }
+}
